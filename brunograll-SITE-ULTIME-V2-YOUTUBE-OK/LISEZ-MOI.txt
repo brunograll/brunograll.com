@@ -1,0 +1,4 @@
+PACK V2 FINAL - YouTube corrigé
+- index.html pointe maintenant vers a-vendre-lecture.html (minuscules)
+- a-vendre-lecture.html contient le player YouTube 7IDeoEv852Q
+- Tout est prêt à glisser sur Netlify

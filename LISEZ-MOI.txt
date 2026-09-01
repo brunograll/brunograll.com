@@ -1,4 +1,4 @@
-PACK V2 FINAL - YouTube corrigé
-- index.html pointe maintenant vers a-vendre-lecture.html (minuscules)
-- a-vendre-lecture.html contient le player YouTube 7IDeoEv852Q
-- Tout est prêt à glisser sur Netlify
+SITE BRUNOGRALL.COM
+
+Le site est hébergé par GitHub Pages.
+Toute modification publiée sur la branche main déclenche automatiquement sa mise en ligne.

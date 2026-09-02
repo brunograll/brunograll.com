@@ -38,8 +38,19 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
 .btn.clip{border-color:#b91c1c;color:#b91c1c} .btn.clip:hover{background:#b91c1c;color:white}
 .btn.small{padding:8px 14px;font-size:11px;border-color:#bbb;color:#666}
 .btn.small:hover{background:#666;color:white;border-color:#666}
+.carnet{padding:60px 0;border-top:1px solid var(--line)}
+.carnet-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:32px}
+.carnet-head h2{font-size:42px}
+.carnet-head p{max-width:590px;color:#555}
+.carnet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.carnet-card{display:block;padding:24px;border:1px solid var(--line);border-radius:6px;background:white;color:var(--ink);text-decoration:none;transition:.2s}
+.carnet-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.carnet-card .kind{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.carnet-card h3{font-size:25px;line-height:1.15;margin-bottom:10px}
+.carnet-card p{font-size:13.5px;color:#555}
+.carnet-more{margin-top:26px}
 .footer{padding:60px 0 40px;text-align:center;font-size:12px;letter-spacing:0.2em;color:#999;border-top:1px solid var(--line);margin-top:60px}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.bio{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.bio{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.carnet-head{display:block}.carnet-head p{margin-top:12px}.carnet-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -99,6 +110,31 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
         <a class="btn small" href="pdfs/Refuge_extrait.pdf" download>⬇ Télécharger</a>
       </div>
     </div>
+  </section>
+
+  <section class="carnet" id="carnet">
+    <div class="carnet-head">
+      <h2>Carnet</h2>
+      <p>Définitions personnelles, mots-valises, questions sans réponse et autres formes brèves. Un espace appelé à s’enrichir au fil du temps.</p>
+    </div>
+    <div class="carnet-grid">
+      <a class="carnet-card" href="carnet/index.html#lexique">
+        <div class="kind">Définitions personnelles</div>
+        <h3>Mon petit lexique du réel</h3>
+        <p>Des mots communs accompagnés de définitions qui n’engagent que leur auteur.</p>
+      </a>
+      <a class="carnet-card" href="carnet/index.html#dysorthographiques">
+        <div class="kind">Jeux de langue</div>
+        <h3>Définitions dysorthographiques</h3>
+        <p>Quand l’orthographe déraille volontairement pour éclairer autrement les mots.</p>
+      </a>
+      <a class="carnet-card" href="carnet/index.html#questions">
+        <div class="kind">Toujours en suspens</div>
+        <h3>Questions sans réponse</h3>
+        <p>Des interrogations essentielles auxquelles le temps n’a toujours pas répondu.</p>
+      </a>
+    </div>
+    <div class="carnet-more"><a class="btn accent" href="carnet/index.html">Entrer dans le Carnet</a></div>
   </section>
 
   <section class="bio" id="apropos">

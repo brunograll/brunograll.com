@@ -39,9 +39,14 @@ a{color:inherit}
 .question{background:#1A1A1A;color:#FAF8F5;border-color:#1A1A1A}
 .question h3{color:#D69A7D}
 .question p{font-size:27px}
+.encounter{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:42px;align-items:center}
+.encounter-copy h3{font-size:34px;line-height:1.1;margin-bottom:14px}
+.encounter-copy p{color:#555;font-size:15px}
+.encounter-video{width:100%;max-width:320px;aspect-ratio:9/16;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#111;box-shadow:0 12px 34px rgba(0,0,0,.09)}
+.encounter-video iframe{display:block;width:100%;height:100%;border:0}
 .footer{padding:52px 0;text-align:center;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#999}
 .rights{margin-top:12px;font-size:10px;letter-spacing:.04em;text-transform:none;color:#aaa}
-@media(max-width:700px){.top{display:block}.top span{display:block;margin-top:8px;color:#777}.chapter-head{grid-template-columns:1fr;gap:14px}.entries{grid-template-columns:1fr}.entry.wide{grid-column:auto}.hero{padding:56px 0}.question p{font-size:24px}}
+@media(max-width:700px){.top{display:block}.top span{display:block;margin-top:8px;color:#777}.chapter-head{grid-template-columns:1fr;gap:14px}.entries{grid-template-columns:1fr}.entry.wide{grid-column:auto}.hero{padding:56px 0}.question p{font-size:24px}.encounter{grid-template-columns:1fr;gap:26px}.encounter-video{margin:0 auto}}
 </style>
 </head>
 <body>
@@ -64,6 +69,7 @@ a{color:inherit}
       <a href="#dysorthographiques">Dysorthographiques</a>
       <a href="#mots-valises">Mots-valises</a>
       <a href="#questions">Questions</a>
+      <a href="#rencontres">Livres, films, musiques</a>
     </nav>
 
     <section class="chapter" id="lexique">
@@ -130,6 +136,22 @@ a{color:inherit}
         <article class="entry question"><h3>Après l’écoute du Carnaval des animaux</h3><p>Pourquoi les Saint-Saëns n’ont-ils pas prénommé leur fils musicien L’ouïe ?</p></article>
         <article class="entry question wide"><h3>Question de philosophie canine</h3><p>L’homme est-il un Milou pour l’homme ?</p></article>
         <article class="entry question wide"><h3>Question sans réponse écrite</h3><p>Si les écrits restent, qu’en est-il des dessins ? (Et où s’envolent-ils ?)</p></article>
+      </div>
+    </section>
+
+    <section class="chapter" id="rencontres">
+      <div class="chapter-head">
+        <h2>Livres, films, musiques et autres rencontres</h2>
+        <p>Des œuvres, des voix et des images rencontrées au gré des affinités.</p>
+      </div>
+      <div class="encounter">
+        <div class="encounter-copy">
+          <div class="eyebrow">Un livre, un film, une minute…</div>
+          <h3>1275 âmes — Coup de torchon</h3>
+        </div>
+        <div class="encounter-video">
+          <iframe src="https://www.youtube-nocookie.com/embed/4HF526O0JdI" title="Coup de torchon — vidéo courte de Bruno Grall" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
   </main>

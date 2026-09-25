@@ -49,6 +49,12 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
 .carnet-card h3{font-size:25px;line-height:1.15;margin-bottom:10px}
 .carnet-card p{font-size:13.5px;color:#555}
 .carnet-more{margin-top:26px}
+.carnet-nouveautes{margin-bottom:32px;padding:22px 24px;border:1px solid var(--line);border-radius:6px;background:white}
+.carnet-nouveautes-titre{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.carnet-nouveautes-liens{display:flex;flex-wrap:wrap;gap:10px 24px}
+.carnet-nouveautes-liens a{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.2;color:var(--ink);text-decoration:none}
+.carnet-nouveautes-liens a:hover{color:var(--accent)}
+.carnet-nouveautes-liens span{font-family:'Inter',sans-serif;font-size:13px;color:var(--accent)}
 .footer{padding:60px 0 40px;text-align:center;font-size:12px;letter-spacing:0.2em;color:#999;border-top:1px solid var(--line);margin-top:60px}
 @media(max-width:800px){.hero{grid-template-columns:1fr}.bio{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.carnet-head{display:block}.carnet-head p{margin-top:12px}.carnet-grid{grid-template-columns:1fr}}
 </style>
@@ -117,6 +123,14 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
     <div class="carnet-head">
       <h2>Carnet</h2>
       <p>Définitions personnelles, mots-valises, questions sans réponse et autres formes brèves. Un espace appelé à s’enrichir au fil du temps.</p>
+    </div>
+    <div class="carnet-nouveautes" aria-label="Nouveautés du Carnet">
+      <p class="carnet-nouveautes-titre">À découvrir dans le Carnet</p>
+      <div class="carnet-nouveautes-liens">
+        <a href="carnet/index.html#graphologie">Graphologie <span aria-hidden="true">↗</span></a>
+        <a href="carnet/index.html#ressasser">Ressasser <span aria-hidden="true">↗</span></a>
+        <a href="carnet/index.html#immobylette">Immobylette <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
     <div class="carnet-grid">
       <a class="carnet-card" href="carnet/index.html#lexique">

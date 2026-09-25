@@ -50,7 +50,7 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
 .carnet-card p{font-size:13.5px;color:#555}
 .carnet-more{margin-top:26px}
 .carnet-nouveautes{margin-bottom:32px;padding:22px 24px;border:1px solid var(--line);border-radius:6px;background:white}
-.carnet-nouveautes-titre{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.carnet-nouveautes-titre{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
 .carnet-nouveautes-liens{display:flex;flex-wrap:wrap;gap:10px 24px}
 .carnet-nouveautes-liens a{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.2;color:var(--ink);text-decoration:none}
 .carnet-nouveautes-liens a:hover{color:var(--accent)}
@@ -68,6 +68,7 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
       <h1>Bruno<br>Grall</h1>
       <p style="margin-top:24px;font-size:22px;font-family:'Cormorant Garamond',serif;font-style:italic;">Un auteur du réel qui bascule.</p>
       <p style="margin-top:20px;">Bruno Grall est l’auteur de trois romans, un quatrième s’écrit tranquillement. Ses textes explorent les rapports humains, les dérèglements du monde contemporain et les zones d’incertitude où le réel bascule vers l’étrange ou l’anticipation.</p>
+      <p style="margin-top:24px;"><a class="btn accent" href="#nouveautes-carnet">Nouvelles entrées du Carnet ↓</a></p>
     </div>
   </section>
 
@@ -124,7 +125,7 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
       <h2>Carnet</h2>
       <p>Définitions personnelles, mots-valises, questions sans réponse et autres formes brèves. Un espace appelé à s’enrichir au fil du temps.</p>
     </div>
-    <div class="carnet-nouveautes" aria-label="Nouveautés du Carnet">
+    <div class="carnet-nouveautes" id="nouveautes-carnet" aria-label="Nouveautés du Carnet">
       <p class="carnet-nouveautes-titre">Nouvelles entrées dans le Carnet</p>
       <div class="carnet-nouveautes-liens">
         <a href="carnet/index.html#graphologie">Graphologie <span aria-hidden="true">↗</span></a>

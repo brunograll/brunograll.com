@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haïkus — Carnet de Bruno Grall</title>
+<link rel="canonical" href="https://brunograll.com/carnet/haikus.html">
+<link rel="icon" href="../images/portrait_3_4.jpg">
+<meta name="description" content="Haïkus de Bruno Grall : quelques instants pris au passage, retrouvés entre les pages d’un carnet.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF8F5;--ink:#1A1A1A;--accent:#C17C5B;--line:#E8E0D8;--muted:#68615c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.7}
+.container{max-width:960px;margin:auto;padding:0 24px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:24px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.top a{color:inherit;text-decoration:none}.top span{color:var(--muted)}
+.mock{font-size:10px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}
+.hero{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:64px;align-items:center;padding:72px 0 78px;border-bottom:1px solid var(--line)}
+.photo{margin:0;padding:12px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 48px rgba(53,37,25,.08)}
+.photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;filter:contrast(1.18) brightness(1.09)}
+.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+h1,h2,p{margin-top:0}
+h1{font:600 clamp(54px,7vw,78px)/.95 'Cormorant Garamond',Georgia,serif;margin-bottom:28px}
+.intro{font:400 25px/1.38 'Cormorant Garamond',Georgia,serif;max-width:440px;margin-bottom:22px}
+.note{font-size:13px;color:var(--muted);max-width:420px}
+.collection{max-width:700px;margin:0 auto;padding:46px 0 30px}
+.poem{display:grid;grid-template-columns:64px 1fr;gap:32px;align-items:start;padding:55px 0 64px;border-bottom:1px solid var(--line)}
+.number{font:400 14px/1 'Cormorant Garamond',Georgia,serif;color:var(--accent);padding-top:12px}
+.poem p{font:400 clamp(29px,3.7vw,40px)/1.23 'Cormorant Garamond',Georgia,serif;letter-spacing:.005em;margin:0}
+.poem p span{display:block}
+.poem:nth-child(even){margin-left:52px}
+.closing{max-width:700px;margin:0 auto;padding:48px 0 84px;font-size:13px;color:var(--muted)}
+.footer{padding:42px 0 52px;border-top:1px solid var(--line);text-align:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#999}
+@media(max-width:700px){.top{align-items:start;gap:8px}.top span{text-align:right}.hero{grid-template-columns:1fr;gap:32px;padding:42px 0 48px}.photo{max-width:320px;width:80%;margin:auto}.intro{font-size:23px}.collection{padding-top:10px}.poem,.poem:nth-child(even){margin-left:0;grid-template-columns:32px 1fr;gap:14px;padding:38px 0 46px}.poem p{font-size:clamp(27px,7vw,35px)}.closing{padding:36px 0 60px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="top"><a href="index.html">← Bruno Grall · Carnet</a><span>Haïkus</span></header>
+<main>
+<section class="hero" aria-labelledby="title">
+  <figure class="photo"><img src="../images/haikus-carnet.jpg" alt="Page de garde manuscrite du carnet, portant le mot HAÏKUS en grandes lettres dessinées"></figure>
+  <div><p class="eyebrow">Minuscules poèmes</p><h1 id="title">Haïkus</h1><p class="intro">Quelques instants pris au passage, retrouvés entre les pages d’un carnet.</p></div>
+</section>
+<section class="collection" aria-label="Sélection de poèmes">
+  <article class="poem" id="poeme-01" aria-label="Sur le ciment froid,"><span class="number" aria-hidden="true">01</span><p><span>Sur le ciment froid,</span><span>Un papillon égaré</span><span>Attend son heure.</span></p></article>
+  <article class="poem" id="poeme-02" aria-label="Bien arrivés."><span class="number" aria-hidden="true">02</span><p><span>Bien arrivés.</span><span>Traversée de la France,</span><span>Vent tempétueux.</span></p></article>
+  <article class="poem" id="poeme-03" aria-label="Cimes des hauts pins"><span class="number" aria-hidden="true">03</span><p><span>Cimes des hauts pins</span><span>Ensoleillées au couchant</span><span>Elles rosissent.</span></p></article>
+  <article class="poem" id="poeme-04" aria-label="Les grains de sable"><span class="number" aria-hidden="true">04</span><p><span>Les grains de sable</span><span>S’effraient des monstres rochers</span><span>Qui les surplombent.</span></p></article>
+  <article class="poem" id="poeme-05" aria-label="Vent qui refroidit"><span class="number" aria-hidden="true">05</span><p><span>Vent qui refroidit</span><span>Les oreilles et le front</span><span>— Midi, la plage.</span></p></article>
+  <article class="poem" id="poeme-06" aria-label="Les manteaux mouillés,"><span class="number" aria-hidden="true">06</span><p><span>Les manteaux mouillés,</span><span>Après la promenade,</span><span>Sèchent au sous-sol.</span></p></article>
+  <article class="poem" id="poeme-07" aria-label="Le grand feu de bois"><span class="number" aria-hidden="true">07</span><p><span>Le grand feu de bois</span><span>Réchauffe les cœurs meurtris</span><span>Petit à petit.</span></p></article>
+  <article class="poem" id="poeme-08" aria-label="Sont-elles fêlées"><span class="number" aria-hidden="true">08</span><p><span>Sont-elles fêlées</span><span>Les cloches de l’église ?</span><span>— Sept heures sonnent fort.</span></p></article>
+  <article class="poem" id="poeme-09" aria-label="Le chef courroucé"><span class="number" aria-hidden="true">09</span><p><span>Le chef courroucé</span><span>Traverse notre bureau</span><span>— Un corbeau braillard.</span></p></article>
+  <article class="poem" id="poeme-10" aria-label="Vent en bourrasques"><span class="number" aria-hidden="true">10</span><p><span>Vent en bourrasques</span><span>Tout bouge autour de moi.</span><span>Tempête sur nous.</span></p></article>
+  <article class="poem" id="poeme-11" aria-label="L’œil, le nez gouttant !"><span class="number" aria-hidden="true">11</span><p><span>L’œil, le nez gouttant !</span><span>Le temps a déjà changé,</span><span>Le froid arrive.</span></p></article>
+  <article class="poem" id="poeme-12" aria-label="Place Masséna,"><span class="number" aria-hidden="true">12</span><p><span>Place Masséna,</span><span>Vivent des lumières</span><span>Très électriques.</span></p></article>
+  <article class="poem" id="poeme-13" aria-label="Un maigre moineau"><span class="number" aria-hidden="true">13</span><p><span>Un maigre moineau</span><span>Se pose et admire</span><span>La lune blême.</span></p></article>
+  <article class="poem" id="poeme-14" aria-label="Inventons un mot"><span class="number" aria-hidden="true">14</span><p><span>Inventons un mot</span><span>Qui dira notre amour</span><span>Immarcescible.</span></p></article>
+  <article class="poem" id="poeme-15" aria-label="Dans l’obscurité,"><span class="number" aria-hidden="true">15</span><p><span>Dans l’obscurité,</span><span>Près de la rivière</span><span>Passe un chien noir.</span></p></article>
+</section>
+<p class="closing"><a href="index.html">← Revenir au Carnet</a></p>
+</main>
+<footer class="footer">© Bruno Grall — Carnet — brunograll.com</footer>
+</div>
+</body></html>

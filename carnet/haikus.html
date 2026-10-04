@@ -26,14 +26,15 @@ h1{font:600 clamp(54px,7vw,78px)/.95 'Cormorant Garamond',Georgia,serif;margin-b
 .intro{font:400 25px/1.38 'Cormorant Garamond',Georgia,serif;max-width:440px;margin-bottom:22px}
 .note{font-size:13px;color:var(--muted);max-width:420px}
 .collection{max-width:700px;margin:0 auto;padding:46px 0 30px}
-.poem{display:grid;grid-template-columns:64px 1fr;gap:32px;align-items:start;padding:55px 0 64px;border-bottom:1px solid var(--line)}
-.number{font:400 14px/1 'Cormorant Garamond',Georgia,serif;color:var(--accent);padding-top:12px}
-.poem p{font:400 clamp(29px,3.7vw,40px)/1.23 'Cormorant Garamond',Georgia,serif;letter-spacing:.005em;margin:0}
-.poem p span{display:block}
-.poem:nth-child(even){margin-left:52px}
+.poem{display:grid;grid-template-columns:44px 1fr;gap:24px;align-items:start;padding:32px 0 38px;border-bottom:1px solid var(--line)}
+.number{font:400 12px/1 'Cormorant Garamond',Georgia,serif;color:var(--accent);padding-top:9px}
+.poem p{font:400 28px/1.4 'Cormorant Garamond',Georgia,serif;letter-spacing:.005em;margin:0}
+.poem p > span{display:block}
+.day-number{font-family:Inter,Arial,sans-serif;font-size:.8em}
+.poem:nth-child(even){margin-left:32px}
 .closing{max-width:700px;margin:0 auto;padding:48px 0 84px;font-size:13px;color:var(--muted)}
 .footer{padding:42px 0 52px;border-top:1px solid var(--line);text-align:center;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#999}
-@media(max-width:700px){.top{align-items:start;gap:8px}.top span{text-align:right}.hero{grid-template-columns:1fr;gap:32px;padding:42px 0 48px}.photo{max-width:320px;width:80%;margin:auto}.intro{font-size:23px}.collection{padding-top:10px}.poem,.poem:nth-child(even){margin-left:0;grid-template-columns:32px 1fr;gap:14px;padding:38px 0 46px}.poem p{font-size:clamp(27px,7vw,35px)}.closing{padding:36px 0 60px}}
+@media(max-width:700px){.top{align-items:start;gap:8px}.top span{text-align:right}.hero{grid-template-columns:1fr;gap:32px;padding:42px 0 48px}.photo{max-width:320px;width:80%;margin:auto}.intro{font-size:23px}.collection{padding-top:10px}.poem,.poem:nth-child(even){margin-left:0;grid-template-columns:32px 1fr;gap:14px;padding:27px 0 32px}.poem p{font-size:23px}.closing{padding:36px 0 60px}}
 </style>
 </head>
 <body>
@@ -77,7 +78,7 @@ h1{font:600 clamp(54px,7vw,78px)/.95 'Cormorant Garamond',Georgia,serif;margin-b
   <article class="poem" id="poeme-30" aria-label="Verre de vin blanc"><span class="number" aria-hidden="true">30</span><p><span>Verre de vin blanc</span><span>Saveurs étincelantes</span><span>Qui mènent au ciel.</span></p></article>
   <article class="poem" id="poeme-31" aria-label="Les oies bernaches"><span class="number" aria-hidden="true">31</span><p><span>Les oies bernaches</span><span>Quand le soir vient sur la mer</span><span>Ne se quittent pas.</span></p></article>
   <article class="poem" id="poeme-32" aria-label="Whisky irlandais"><span class="number" aria-hidden="true">32</span><p><span>Whisky irlandais</span><span>Pour admirer le soleil</span><span>Perçant mon verre.</span></p></article>
-  <article class="poem" id="poeme-33" aria-label="Arrivée Quimper"><span class="number" aria-hidden="true">33</span><p><span>Arrivée Quimper</span><span>Pluie battante, parapluies</span><span>Des congés, jour 1.</span></p></article>
+  <article class="poem" id="poeme-33" aria-label="Arrivée Quimper"><span class="number" aria-hidden="true">33</span><p><span>Arrivée Quimper</span><span>Pluie battante, parapluies</span><span>Des congés, jour <span class="day-number">1</span>.</span></p></article>
 </section>
 <p class="closing"><a href="index.html">← Revenir au Carnet</a></p>
 </main>

@@ -55,8 +55,12 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
 .carnet-nouveautes-liens a{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.2;color:var(--ink);text-decoration:none}
 .carnet-nouveautes-liens a:hover{color:var(--accent)}
 .carnet-nouveautes-liens span{font-family:'Inter',sans-serif;font-size:13px;color:var(--accent)}
+.carnet-short{display:flex;align-items:baseline;gap:18px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.carnet-short .badge{flex:0 0 auto;font-size:10px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:#0f4c75}
+.carnet-short a{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.2;color:var(--ink);text-decoration:none}
+.carnet-short a:hover{color:#0f4c75}
 .footer{padding:60px 0 40px;text-align:center;font-size:12px;letter-spacing:0.2em;color:#999;border-top:1px solid var(--line);margin-top:60px}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.bio{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.carnet-head{display:block}.carnet-head p{margin-top:12px}.carnet-grid{grid-template-columns:1fr}}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.bio{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.carnet-head{display:block}.carnet-head p{margin-top:12px}.carnet-grid{grid-template-columns:1fr}.carnet-short{display:block}.carnet-short .badge{display:block;margin-bottom:8px}}
 </style>
 </head>
 <body>
@@ -131,6 +135,10 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
         <a href="carnet/index.html#depression">Dépression <span aria-hidden="true">↗</span></a>
         <a href="carnet/index.html#grandilocon">Grandilocon <span aria-hidden="true">↗</span></a>
         <a href="carnet/index.html#sans-culottes">Les sans-culottes <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="carnet-short">
+        <span class="badge">Nouveau Short</span>
+        <a href="carnet/index.html#philip-glass-yuja-wang">Philip Glass / Yuja Wang — une minute de pure émotion <span aria-hidden="true">↗</span></a>
       </div>
     </div>
     <div class="carnet-grid">

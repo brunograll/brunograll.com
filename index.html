@@ -59,8 +59,18 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
 .carnet-short .badge{flex:0 0 auto;font-size:10px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:#0f4c75}
 .carnet-short a{font-family:'Cormorant Garamond',serif;font-size:24px;line-height:1.2;color:var(--ink);text-decoration:none}
 .carnet-short a:hover{color:#0f4c75}
+.share{padding:60px 0;border-top:1px solid var(--line);margin-top:60px;text-align:center}
+.share h2{font-size:36px;margin-bottom:12px}
+.share-intro{max-width:580px;margin:0 auto 28px;color:#555}
+.share-box{display:grid;grid-template-columns:180px minmax(0,390px);gap:34px;align-items:center;justify-content:center;max-width:680px;margin:0 auto;padding:28px;border:1px solid var(--line);border-radius:6px;background:white;text-align:left}
+.share-qr{display:block;width:100%;height:auto;border-radius:4px}
+.share-url{font-family:'Cormorant Garamond',serif;font-size:25px;margin-bottom:18px}
+.share-actions{display:flex;flex-wrap:wrap;gap:8px}
+.share-actions .btn{margin:0}
+.share-actions button{background:transparent;font-family:'Inter',sans-serif;cursor:pointer}
+.share-status{min-height:1.7em;margin-top:10px;font-size:12px;color:#666}
 .footer{padding:60px 0 40px;text-align:center;font-size:12px;letter-spacing:0.2em;color:#999;border-top:1px solid var(--line);margin-top:60px}
-@media(max-width:800px){.hero{grid-template-columns:1fr}.bio{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.carnet-head{display:block}.carnet-head p{margin-top:12px}.carnet-grid{grid-template-columns:1fr}.carnet-short{display:block}.carnet-short .badge{display:block;margin-bottom:8px}}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.bio{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.carnet-head{display:block}.carnet-head p{margin-top:12px}.carnet-grid{grid-template-columns:1fr}.carnet-short{display:block}.carnet-short .badge{display:block;margin-bottom:8px}.share-box{grid-template-columns:1fr;text-align:center}.share-qr{max-width:180px;margin:0 auto}.share-actions{justify-content:center}}
 </style>
 </head>
 <body>
@@ -184,7 +194,37 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
     <p style="margin-top:12px;font-size:13px;color:#777;">J'offre le PDF de mes ouvrages sur simple demande.</p>
   </section>
 
+  <section class="share" aria-labelledby="partager-titre">
+    <h2 id="partager-titre">Partager le Carnet</h2>
+    <p class="share-intro">Vous souhaitez faire connaître <strong>brunograll.com</strong> autour de vous&nbsp;?</p>
+    <div class="share-box">
+      <a href="https://brunograll.com" aria-label="Ouvrir brunograll.com">
+        <img class="share-qr" src="images/qr-code-brunograll.png" alt="QR code donnant accès à brunograll.com">
+      </a>
+      <div>
+        <p class="share-url">brunograll.com</p>
+        <div class="share-actions">
+          <a class="btn accent" href="images/qr-code-brunograll.png" download="qr-code-brunograll.png">Télécharger le QR code</a>
+          <button class="btn small" type="button" id="copy-site-address">Copier l’adresse du site</button>
+        </div>
+        <p class="share-status" id="copy-site-status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
   <div class="footer">© Bruno Grall — Auteur — brunograll.com</div>
 </div>
+<script>
+document.getElementById('copy-site-address').addEventListener('click', async function () {
+  const address = 'https://brunograll.com';
+  const status = document.getElementById('copy-site-status');
+  try {
+    await navigator.clipboard.writeText(address);
+    status.textContent = 'L’adresse a été copiée.';
+  } catch (error) {
+    status.textContent = address;
+  }
+});
+</script>
 </body>
 </html>

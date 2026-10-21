@@ -48,7 +48,8 @@ a{color:inherit}
 .encounter-link:hover{color:var(--accent);border-color:var(--accent)}
 .encounter-media{width:100%;max-width:320px}
 .encounter-video{width:100%;max-width:320px;aspect-ratio:9/16;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#111;box-shadow:0 12px 34px rgba(0,0,0,.09)}
-.encounter-video iframe{display:block;width:100%;height:100%;border:0}
+.encounter-video iframe,.encounter-video video{display:block;width:100%;height:100%;border:0}
+.encounter-video video{object-fit:cover}
 .footer{padding:52px 0;text-align:center;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#999}
 .rights{margin-top:12px;font-size:10px;letter-spacing:.04em;text-transform:none;color:#aaa}
 @media(max-width:700px){.top{display:block}.top span{display:block;margin-top:8px;color:#777}.chapter-head{grid-template-columns:1fr;gap:14px}.entries{grid-template-columns:1fr}.entry.wide{grid-column:auto}.hero{padding:56px 0}.question p{font-size:24px}.encounter{grid-template-columns:1fr;gap:26px}.encounter-video{margin:0 auto}}
@@ -181,6 +182,21 @@ a{color:inherit}
       <div class="chapter-head">
         <h2>Livres, films, musiques et autres rencontres</h2>
         <p>Des œuvres, des voix et des images rencontrées au gré des affinités.</p>
+      </div>
+      <div class="encounter" id="sabine-weiss">
+        <div class="encounter-copy">
+          <div class="eyebrow">Un regard humaniste, une minute silencieuse…</div>
+          <h3>Sabine Weiss — Une vie de photographe</h3>
+          <p>La France et l’Europe d’après-guerre. Des visages graves, des visages rayonnants.</p>
+        </div>
+        <div class="encounter-media">
+          <div class="encounter-video">
+            <video controls playsinline preload="metadata" poster="../images/sabine-weiss-short.jpg" aria-label="Sabine Weiss — Une vie de photographe, vidéo courte et silencieuse de Bruno Grall">
+              <source src="../videos/sabine-weiss-une-vie-de-photographe.mp4" type="video/mp4">
+              Votre navigateur ne permet pas de lire cette vidéo.
+            </video>
+          </div>
+        </div>
       </div>
       <div class="encounter" id="angele-dis-le">
         <div class="encounter-copy">
